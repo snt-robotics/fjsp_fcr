@@ -1,0 +1,77 @@
+{
+    "availableResources": [{
+            "id": "1",
+            "costNumb": "1",
+            "costCenter": "",
+            "availablePeriods": [0, 1000]
+        },
+        {
+            "id": "2",
+            "costNumb": "2",
+            "costCenter": "",
+            "availablePeriods": [0, 1000]
+        } 
+    ],
+    "jobs": [
+		{
+            "idJob": 1,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [1],
+                    "time": [43],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [1, 2],
+                    "time":      [64,71],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+ 
+                } 
+            ]
+        },
+		{
+            "idJob": 2,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [1,2],
+                    "time": [21,35],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [2],
+                    "time": [43],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+ 
+                } 
+            ]
+        }
+    ]
+}

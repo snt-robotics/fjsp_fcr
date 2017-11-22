@@ -1,0 +1,486 @@
+{
+    "availableResources": [{
+            "id": "1",
+            "costNumb": "1",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        },
+        {
+            "id": "2",
+            "costNumb": "2",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        },
+        {
+            "id": "3",
+            "costNumb": "3",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        },
+        {
+            "id": "4",
+            "costNumb": "4",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        },
+        {
+            "id": "5",
+            "costNumb": "5",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        },
+        {
+            "id": "6",
+            "costNumb": "6",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        },
+        {
+            "id": "7",
+            "costNumb": "7",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        },
+        {
+            "id": "8",
+            "costNumb": "7",
+            "costCenter": "",
+            "availablePeriods": [0, 1000000]
+        }
+    ],
+    "jobs": [
+		{
+            "idJob": 1,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [1,2,3],
+                    "time": [247,123,100],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [4,2,7],
+                    "time": [140,130,123],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [4,5,7],
+                    "time": [150,160,200],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [7,8],
+                    "time": [210,145],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 2,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [1,3],
+                    "time": [214,150],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [3,2],
+                    "time": [87,66],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [5,6,7],
+                    "time": [178,95,150],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [5,8],
+                    "time": [120,150],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 3,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [1,2],
+                    "time": [87,62],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [7,3,4],
+                    "time": [145,180,105],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [4,5,6],
+                    "time": [190,100,153],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [6,8],
+                    "time": [170,165],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 4,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [1,2],
+                    "time": [87,65],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [3,5],
+                    "time": [250,173],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [4,6],
+                    "time": [145,136],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [5,6],
+                    "time": [250,170],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 5,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [2,3,1],
+                    "time": [123,145,128],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [7,4,5],
+                    "time": [86,65,47],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [5,6,2],
+                    "time": [110,85,100],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [8,6],
+                    "time": [165,180],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 6,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [2,3,4],
+                    "time": [145,320,154],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [4,3,5],
+                    "time": [150,123,192],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [5,6,7],
+                    "time": [120,240,180],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [4,7],
+                    "time": [120,50],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 7,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [3,2],
+                    "time": [145,157],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [3,5],
+                    "time": [124,168],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [5,6,7],
+                    "time": [145,165,178],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [8,5],
+                    "time": [230,140],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 8,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [4,3],
+                    "time": [245,257],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [6,5],
+                    "time": [224,268],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [5,6,7],
+                    "time": [145,165,178],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [7,8],
+                    "time": [150,150],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        },{
+            "idJob": 9,
+            "urgencyLevel": 0,
+            "releaseTime": 0,
+            "dueDate": 0,
+            "fixedStartingTime": 0,
+            "sucessorJobs": [],
+            "operationsTopology": [{
+                    "idOp": 1,
+                    "resources": [2,3],
+                    "time": [150,150],
+                    "sucessorOperations": [2],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 2,
+                    "resources": [3,4],
+                    "time": [180,220],
+                    "sucessorOperations": [3],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 3,
+                    "resources": [5,7],
+                    "time": [40,50],
+                    "sucessorOperations": [4],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                },
+                {
+                    "idOp": 4,
+                    "resources": [6,8],
+                    "time": [150,170],
+                    "sucessorOperations": [],
+                    "overlappingCoeffiecient": 1,
+                    "fixedStartingTime": 0,
+                    "additionalTime": 0,
+                    "type": "TYPE01"
+                } 
+            ]
+        }
+    ]
+}
