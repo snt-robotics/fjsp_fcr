@@ -5,4 +5,4 @@ FJSFA and FJSP-FCR - Instances for the Flexible Job Shop Scheduling Problem with
 
 FJSP-GY-jobs - Instances for the Flexible Job Shop Scheduling Problem with availability and parallel operations constraints
 
-yfjs, dafjs are respectivelly composed of Y-jobs and G-jobs
+yfjs, dafjs - Instances for the Flexible Job Shop Scheduling Problem with parallel operations, respectivelly composed of Y-jobs and G-jobs
